@@ -1,6 +1,96 @@
 @import "fonts.css";
-@import "normalize.css";
 @import "global.css";
-@import "present.css";
-@import "todo.css";
-@import "calc.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', Arial, sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1290px;
+
+  margin: 0 auto;
+}
+
+.header {}
+
+
+
+.header__container {
+  padding: 27px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__button-change {
+  max-width: 300px;
+  background: #C300C7;
+  padding: 30px;
+  width: 300px;
+  color: #FFFFFF;
+  border-radius: 30px;
+}
+
+.header__button-change_text {
+  margin-right: 30px;
+}
+
+.header__button-change_image {}
+
+.header__button-gender {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+}
+
+.header__button-men {
+  margin-right: 20px;
+}
+
+.cheader__button-women {}
+
+.disign_info {}
+
+.disign_name {}
+
+.coder_name {}
+
+.disign_create {}
+
+.social__list {}
+
+.social__item {}
+
+.social__link {}
