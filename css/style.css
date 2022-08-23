@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #FFF1F8;
+
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -36,6 +36,14 @@ button {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.women {
+  background-color: #FFF1F8;
+}
+
+.men {
+  background-color: #EFF9FE;
 }
 
 .container {
@@ -127,6 +135,15 @@ img {
 
 }
 
+.header__button-men_active {
+  border-color: #1178B2;
+}
+
+.header__button-women_active {
+  border-color: #C300C7;
+}
+
+
 .card {
   flex-grow: 1;
   padding: 32px 0;
@@ -159,13 +176,13 @@ img {
   font-size: max(3em, min(calc(100vw * 3 / 140), 6em));
 }
 
-.disign_container {
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.disign_info {
+.footer__info {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -176,6 +193,18 @@ img {
 .social__list {
   display: flex;
   gap: 16px;
+}
+
+svg path {
+
+  fill: #5273C8;
+  transition: 0.5s ease-in-out;
+}
+
+svg:hover path {
+
+  fill: red;
+  transition: 0.5s ease-in-out;
 }
 
 
@@ -220,7 +249,7 @@ img {
     flex-wrap: wrap;
   }
 
-  .disign_container {
+  .footer__container {
     flex-direction: column;
     gap: 30px;
     font-size: calc(100vw * 5 / 140);
