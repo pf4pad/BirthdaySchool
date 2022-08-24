@@ -76,7 +76,6 @@ img {
 
 .header__button-change {
   max-width: 300px;
-  background: #C300C7;
   padding: 30px;
   width: 300px;
   color: #FFFFFF;
@@ -85,15 +84,27 @@ img {
   font-size: 18px;
   margin-right: 30px;
   transition: 0.5s ease-in-out;
+}
 
+.women .header__button-change {
+  background: #C300C7;
+}
+
+.men .header__button-change {
+  background: #1178B2;
 }
 
 .header__button-change:last-child {
   margin-right: 0;
 }
 
-.header__button-change:hover {
+.women .header__button-change:hover {
   background: #ff0080;
+
+}
+
+.men .header__button-change:hover {
+  background: #084061;
 
 }
 
@@ -121,10 +132,6 @@ img {
 
 }
 
-.header__button-men:hover {
-  border-color: #1178B2;
-
-}
 
 .header__button-women {
   background-image: url('../img/women.svg');
@@ -135,14 +142,18 @@ img {
 
 }
 
-.header__button-men_active {
+.header__button-men:hover {
   border-color: #1178B2;
 }
 
-.header__button-women_active {
+.women .header__button-women {
   border-color: #C300C7;
 }
 
+.men .header__button-men {
+  border-color: #1178B2;
+  ;
+}
 
 .card {
   flex-grow: 1;
@@ -171,9 +182,22 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Bad Script';
   line-height: max(2em, min(calc(100vw * 3 / 140), 3em));
   font-size: max(3em, min(calc(100vw * 3 / 140), 6em));
+  text-align: center;
+}
+
+.women .card__text {
+  font-family: 'Bad Script';
+}
+
+.men .card__text {
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+
+.women .card__text {
+  font-family: 'Bad Script';
 }
 
 .footer__container {
@@ -195,18 +219,27 @@ img {
   gap: 16px;
 }
 
-svg path {
+.men svg path {
 
   fill: #5273C8;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-svg:hover path {
-
-  fill: red;
-  transition: 0.5s ease-in-out;
+.men svg:hover path {
+  fill: #0c276b;
+  transition: all 0.5s ease-in-out;
 }
 
+.women svg path {
+
+  fill: #C300C7;
+  transition: all 0.5s ease-in-out;
+}
+
+.women svg:hover path {
+  fill: #ff0080;
+  transition: all 0.5s ease-in-out;
+}
 
 
 @media (max-width: 1080px) {
