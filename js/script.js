@@ -1,3 +1,5 @@
+// const html2canvasMin = require("js/html2canvas.min")
+
 const buttonMen = document.querySelector('.header__button-men')
 const buttonWomen = document.querySelector('.header__button-women')
 const body = document.body
@@ -77,3 +79,21 @@ buttonWomen.addEventListener('click', changeToWomen)
 buttonText.addEventListener('click', changeText)
 buttonImage.addEventListener('click', changeImage)
 getDataCard()
+
+
+const cardSave = document.querySelector('.header__button-change_save')
+const cardWrapper = document.querySelector('.card__wrapper')
+cardSave.addEventListener('click', () => {
+  const newWindow = window.open(
+    '',
+    '',
+    `width = 840, height = 520,
+    top = ${(screen.height / 2) - 520 / 2},
+    left = ${(screen.width / 2) - 840 / 2}`
+  )
+  html2canvas(cardWrapper).then(canvas => {
+    canvas.style.maxWidth = '100%'
+    canvas.style.heigth = 'auto'
+    newWindow.document.body.append(canvas)
+  })
+})
